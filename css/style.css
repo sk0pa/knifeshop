@@ -58,20 +58,40 @@ font-size: 150%;
 color: black;
 }
 
+h1{
+margin-left: 40px;
+margin-right: 15px;
+color: black;
+}
+
 .numb{
 widows: 20px;
 margin-top: 15px;
 }
 
-.buy{
-margin-right: 10px;
-background-color: coral;
+.but{
+margin-top: 0;
+margin-bottom: 15px;
+}
+
+.sum_product{
+    width: 45%;
+}
+
+.buybutton{
+width: 40%;
+margin-left: 5%;
+background-color:crimson;
 border-top-left-radius:5px;
 border-top-right-radius:5px;
 border-bottom-left-radius:5px;
 border-bottom-right-radius:5px;
 }
 
-.sum_product{
-    width: 45%;
+.goodname{
+font-family: serif;
+font-size: 120%;
+color: #6C3926;
+margin-top: 10px;
+margin-bottom: 10px;
 }
