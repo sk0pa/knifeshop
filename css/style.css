@@ -20,7 +20,9 @@ margin-top: 50px; margin-left: auto; background-color:azure;padding-bottom: 0;
 }
 
 .good{
-height: 300px;
+margin-top: 15px;
+border: 2px;
+border-color: black;
 }
 
 .goodimage{
@@ -56,8 +58,20 @@ font-size: 150%;
 color: black;
 }
 
+.numb{
+widows: 20px;
+margin-top: 15px;
+}
 
+.buy{
+margin-right: 10px;
+background-color: coral;
+border-top-left-radius:5px;
+border-top-right-radius:5px;
+border-bottom-left-radius:5px;
+border-bottom-right-radius:5px;
+}
 
-//https://ru.wikipedia.org/wiki/Web_Storage
-//http://commandos-ua.com/g2325368-ohotnichi-nozhi
-//http://www.grandway.com.ua/
+.sum_product{
+    width: 45%;
+}
