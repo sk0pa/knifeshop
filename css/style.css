@@ -1,12 +1,18 @@
-body {background-image: url("../images/honeycomb.jpg");}
+body {
+    background-image: url("../images/dark-green-background.jpg");
+}
+
 .container .row {
-margin-top: 50px; margin-left: auto; background-color:azure;padding-bottom: 0;
+    margin-top: 50px; 
+    margin-left: auto; 
+    background-color: #B08E67;
+    padding-bottom: 0;
 }
 
 .footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+    padding-top: 19px;
+    color: #474747;
+    border-top: 1px solid;
 }
 
 .bott{
@@ -20,58 +26,59 @@ margin-top: 50px; margin-left: auto; background-color:azure;padding-bottom: 0;
 }
 
 .good{
-margin-top: 15px;
-border: 2px;
-border-color: black;
+    margin-top: 15px;
 }
 
 .goodimage{
-width: 100%;
+    width: 100%;
+    border: 1px solid #303030;
 }
 
 p:last-of-type{
     margin-bottom: 1.5em;
+    color: black;
 }
 
 p{
-margin-top: 1.5em;
+    margin-top: 1.5em;
 }
 
 .img_about {
-  margin: 0 15px 10px 0;
-  width:60%;
-  float: left;
-  text-align: center;
+    margin: 0 15px 10px 0;
+    width:60%;
+    float: left;
+    text-align: center;
 }
 
 #sertif{
-width: 80%;
+    width: 80%;
 }
 
 h2{
-color: firebrick;}
+    color: firebrick;
+}
 
 h3{
-margin-left: 15px;
-margin-right: 15px;
-font-size: 150%;
-color: black;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 150%;
+    color: black;
 }
 
 h1{
-margin-left: 40px;
-margin-right: 15px;
-color: black;
+    margin-left: 40px;
+    margin-right: 15px;
+    color: black;
 }
 
 .numb{
-widows: 20px;
-margin-top: 15px;
+    widows: 20px;
+    margin-top: 15px;
 }
 
 .but{
-margin-top: 0;
-margin-bottom: 15px;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 .sum_product{
@@ -79,19 +86,33 @@ margin-bottom: 15px;
 }
 
 .buybutton{
-width: 40%;
-margin-left: 5%;
-background-color:crimson;
-border-top-left-radius:5px;
-border-top-right-radius:5px;
-border-bottom-left-radius:5px;
-border-bottom-right-radius:5px;
+    width: 40%;
+    margin-left: 12%;
+    background-color:chocolate;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    color: black;
 }
 
 .goodname{
-font-family: serif;
-font-size: 120%;
-color: #6C3926;
-margin-top: 10px;
-margin-bottom: 10px;
+    font-family: serif;
+    font-size: 120%;
+    color: #5B2121;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+span{
+    color: black;
+}
+
+div{
+    border: 1px solid black;
+}
+
+.price{
+    font-size: 120%;
+    color: #C00D0D;
 }
