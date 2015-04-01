@@ -26,10 +26,10 @@ function initializeStorage() {
         "Нож охотничий 2282 VWP"];
     
     for(var i=1; i<10; i++) {
-        localStorage.setItem(i+'00', 0);
-        localStorage.setItem(i+'01', prices[i]);
-        localStorage.setItem(i+'02', 0);
-        localStorage.setItem(i+'03', prices[i]);
+        localStorage.setItem(i+'number', 0);
+        localStorage.setItem(i+'price', prices[i]);
+        localStorage.setItem(i+'sum', 0);
+        localStorage.setItem(i+'name', names[i]);
     }
 }
 
@@ -49,13 +49,23 @@ function addItem(a, b) {
         window.alert("Введите положительное количество товара!");
         return;
     }
-    localStorage.setItem(id+'00', num);
-    localStorage.setItem(id+'02', num*(localStorage.getItem[i+'01']));
+    if (num > 100) {
+        window.alert("За вами уже выехали!");
+        return;
+    }
+    if ((localStorage.getItem(id+'number')+num) > 100) {
+        window.alert("За вами уже выехали!");
+        return;
+    }
+    num = localStorage.getItem(id+'number')+num;
+    localStorage.setItem(id+'number', num);
+    var sum = localStorage.getItem(id+'sum'); 
+    localStorage.setItem(id+'sum', sum+(num*(localStorage.getItem[i+'price'])));
 }
 
 function deleteItem(id) {
-    localStorage.setItem(id+'00', 0);
-    localStorage.setItem(id+'02', 0);
+    localStorage.setItem(id+'number', 0);
+    localStorage.setItem(id+'sum', 0);
 }
 
 function generatePage() {
