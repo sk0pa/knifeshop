@@ -15,11 +15,6 @@ body {
     border-top: 1px solid;
 }
 
-.bott{
-    margin: 0 0 1.5em;
-	text-align: center;
-}
-
 .fig{
     margin: 0 0 0;
 	text-align: center;
@@ -36,11 +31,11 @@ body {
 
 p:last-of-type{
     margin-bottom: 1.5em;
-    color: black;
 }
 
 p{
     margin-top: 1.5em;
+    color: black;
 }
 
 .img_about {
@@ -52,6 +47,13 @@ p{
 
 #sertif{
     width: 80%;
+}
+
+h4{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 150%;
+    color: black;
 }
 
 h2{
@@ -108,14 +110,62 @@ span{
     color: black;
 }
 
-div{
-    border: 1px solid black;
-}
-
-.price{
+.price {
     font-size: 120%;
     color: #C00D0D;
 }
-.goodinbucket{
-    
+.goodinbucket, .good {
+    margin-bottom: 10px;
+    border: 1px solid darkgoldenrod;
+}
+
+.buyallbutton {
+    width: 40%;
+    align-content: center;
+    background-color:darkgreen;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    color: black;
+    height: 5%;
+}
+
+#buck {
+margin-top: 10px;
+}
+
+.deletebutton {
+    width: 40%;
+    margin-left: 20px;
+    background-color:orangered;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    border-bottom-left-radius:2px;
+    border-bottom-right-radius:2px;
+    color: black;
+}
+
+.bott {
+    margin: 0 0 1.5em;
+	text-align: center;
+}
+
+ul {
+    color: black;
+}
+
+.empty {
+    font-size: 40;
+    margin: 1.5em 0 1.5em;
+    text-align: center;
+    height: 100px;
+}
+
+#love {
+    text-align: center;
+}
+
+#fake {
+    text-align: right;
 }
