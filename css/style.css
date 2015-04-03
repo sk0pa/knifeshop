@@ -141,7 +141,6 @@ span {
     border-bottom-left-radius:5px;
     border-bottom-right-radius:5px;
     color: black;
-    height: 5%;
 }
 
 #buck, .offf {
@@ -183,6 +182,6 @@ ul {
     text-align: right;
 }
 
-li::first-line{
- margin-left: 5px;
+#moto{
+    font-style: italic;
 }

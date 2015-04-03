@@ -51,18 +51,16 @@ function addItem(a, b) {
     var num = parseInt(b, 10);
     var id = a;
     var summm = 0;
-    if (num < 0) {
+    if ((num < 1)||(num.toString() === "NaN") {
         window.alert("Введите положительное количество товара!");
         return;
     }
-    if (num.toString() === "NaN") {
-        window.alert("Введите положительное количество товара!");
-        return;
-    }
+
     if (num > 100) {
         window.alert("За вами уже выехали!");
         return;
     }
+    
     if(localStorage.getItem(id+'name')==undefined) 
         initializeStorage();
     
