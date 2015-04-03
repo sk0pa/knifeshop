@@ -7,6 +7,10 @@ body {
     margin-left: auto; 
     padding-bottom: 0;
     background-color: #EFE7C6;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
 }
 
 .footer {
@@ -50,10 +54,13 @@ h4{
     margin-right: 15px;
     font-size: 150%;
     color: black;
+    font-family: "Georgia";
 }
 
 h2{
     color: firebrick;
+    font-family: "Times New Roman", serif;
+    
 }
 
 h3{
@@ -61,12 +68,15 @@ h3{
     margin-right: 15px;
     font-size: 150%;
     color: black;
+    font-family: "Georgia";
+    font-style: italic;
 }
 
 h1{
     margin-left: 40px;
     margin-right: 15px;
     color: black;
+    font-family: "Constantia", serif;
 }
 
 .numb{
@@ -112,6 +122,11 @@ span {
 }
 
 .goodinbucket, .good {
+    background-color: bisque;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
     margin-bottom: 40px;
     border-top: 2px solid #800000;
     border-bottom: 2px solid #800000;
@@ -166,4 +181,8 @@ ul {
 
 #fake {
     text-align: right;
+}
+
+li::first-line{
+ margin-left: 5px;
 }

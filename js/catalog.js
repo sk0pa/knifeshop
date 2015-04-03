@@ -44,7 +44,7 @@ function clearStorage() {
 
 function makeOrder() {
     initializeStorage();
-    window.alert("Thank you for purchasing!");
+    window.alert("Благодарим за покупку!");
 }
 
 function addItem(a, b) {
@@ -87,12 +87,12 @@ function generatePage() {
     var content="";
     for(id=1;id<10;id++) {
         if(localStorage.getItem(id+'number')!=0) {
-            content+='<div class="goodinbucket col-lg-4 col-md-4 col-sm-12 col-xs-12"><span class="goodname">'+localStorage[id+'name']+'</span><img src="images/product'+id+'.jpeg" class="goodimage"><p>Цена: <span class="price"> '+localStorage[id+'price']+' грн.</span></p><p>Количество: <span class="price"> '+localStorage[id+'number']+' шт.</span></p><p>Общая сумма: <span class="price"> '+localStorage[id+'sum']+' грн.</span></p><form><button type="submit" class="deletebutton" onclick="deleteItem('+id+')">Удалить</button></form></div>';
+            content+='<div class="goodinbucket col-lg-4 col-md-4 col-sm-12 col-xs-12"><span class="goodname">'+localStorage[id+'name']+'</span><img src="images/product'+id+'.jpeg" class="goodimage"><p>Цена: <span class="price"> '+localStorage[id+'price']+' грн.</span></p><p>Количество: <span class="price"> '+localStorage[id+'number']+' шт.</span></p><p>Общая сумма: <span class="price"> '+localStorage[id+'sum']+' грн.</span></p><form><button type="submit" class="btn btn-danger deletebutton" onclick="deleteItem('+id+')">Удалить</button></form></div>';
             allsum = allsum +(1*localStorage[id+'sum']);
         }
     }
     if(allsum!=0) {
-        content+='<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><p>Общая сумма заказа: <span class="price">'+allsum+' грн. </span></p><form><button type="submit"  class="buyallbutton" onclick="makeOrder()">Купить всё</button></form></div>';
+        content+='<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><p>Общая сумма заказа: <span class="price">'+allsum+' грн. </span></p><form><button type="submit"  class="btn btn-success buyallbutton" onclick="makeOrder()">Купить всё</button></form></div>';
     } else { content+='<p class="empty">Корзина пуста.</p>'; }
     document.getElementById("buck").innerHTML=content;
 }
